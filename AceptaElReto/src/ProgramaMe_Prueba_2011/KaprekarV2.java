@@ -1,18 +1,29 @@
 package ProgramaMe_Prueba_2011;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class KaprekarV2 {
 
-	public static void main(String[] args) 
+	public static void main(String[] args) throws IOException
 	{
-		Scanner tec = new Scanner(System.in);
+		//Scanner tec = new Scanner(System.in);
+		StringBuilder asc = new StringBuilder();
+		StringBuilder desc = new StringBuilder();
+		char[] num;
+		BufferedReader tec = new BufferedReader(new InputStreamReader(System.in));
 		
-		int n = tec.nextInt();
-		int[] comprobaciones = new int[n];
+		int n = Integer.parseInt(tec.readLine());
+		
+		String[] comprobaciones = new String[n];
 		for (int i = 0; i < n; i++)
 		{
-			comprobaciones[i] = tec.nextInt();
+			comprobaciones[i] = tec.readLine();
+		}
+		for(int i = 0; i < n; i++)
+		{
 			
 		}
 	}
