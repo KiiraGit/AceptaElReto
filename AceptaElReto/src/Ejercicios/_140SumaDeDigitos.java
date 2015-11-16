@@ -23,7 +23,7 @@ public class _140SumaDeDigitos
 				{
 					for (int i = 0; i < digits.length; i++)
 					{
-						suma += digits[i];
+						suma += (int)digits[i] - 48;
 						result += digits[i];
 						if (i + 1 == digits.length)
 						{
