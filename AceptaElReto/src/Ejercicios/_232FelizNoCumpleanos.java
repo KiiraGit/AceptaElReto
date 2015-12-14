@@ -57,6 +57,11 @@ public class _232FelizNoCumpleanos
 					diasInt -= Math.abs(anoCum - (anoCom - 1));
 					diasNC = diasAnoCumple + diasAnoCom + diasInt;
 					
+					if (mesCom > mesCum || (mesCom == mesCum && diaCom > diaCum))
+					{
+						diasNC--;
+					}
+					
 					salidas.add(diasNC);
 				}
 				
